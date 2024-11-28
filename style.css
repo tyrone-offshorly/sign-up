@@ -15,6 +15,7 @@
 body {
   height: 100vh;
   display: flex;
+  background: #F9FAFB;
 }
 
 a:visited, a {
@@ -59,4 +60,36 @@ a:visited, a {
 
 .form-section {
   flex: 3;
+  align-self: center;
+  padding-left: 3rem;
+  padding-right: 7rem;
+}
+.form-section p {
+  font-weight: bold;
+  font-size: 1.75rem;
+
+}
+
+.form-section .form-controls {
+  display:flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  row-gap: 1rem;
+}
+.form-controls input {
+  display: block;
+  width: 35ch;
+  height: 1.5rem;
+}
+.form-controls label {
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: #202A38;
+}
+.form-section strong{
+  display: inline-block;
+  font-size: 1.75rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
 }
