@@ -57,12 +57,16 @@ a:visited, a {
   height: 6rem;
   width: 5rem;
 }
+.form-upper {
+  padding-left: 4rem;
+  padding-right: 6rem;
+  box-shadow: 0 4px 5px #DDDDDE;
+  padding-bottom: 2rem;
+}
 
 .form-section {
   flex: 3;
   align-self: center;
-  padding-left: 3rem;
-  padding-right: 7rem;
 }
 .form-section p {
   font-weight: bold;
@@ -92,4 +96,32 @@ a:visited, a {
   font-size: 1.75rem;
   margin-top: 5rem;
   margin-bottom: 1rem;
+}
+
+form button {
+  box-sizing: content-box;
+  border: none;
+  font-size: 1rem;
+  padding: 1rem 2.5rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+  color: #F5F6F3;
+  background-color: #596D48;
+  box-shadow: 0 4px 5px #DDDDDE;
+}
+
+form p:last-child { 
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin-left: 4rem;
+}
+
+form p:last-child a {
+  color: #596D48;
+  text-decoration: none;
+}
+form p:last-child a:visited {
+  color: #596D48;
 }
