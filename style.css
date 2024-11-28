@@ -73,7 +73,9 @@ a:visited, a {
   font-size: 1.75rem;
 
 }
-
+.splash-title + p {
+  margin-bottom: 1rem;
+}
 .form-section .form-controls {
   display:flex;
   flex-wrap: wrap;
@@ -83,7 +85,19 @@ a:visited, a {
 .form-controls input {
   display: block;
   width: 35ch;
+  padding-left: 4px;
   height: 1.5rem;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline:none;
+}
+.form-controls input:focus {
+  display: block;
+  width: 35ch;
+  height: 1.5rem;
+  border: 1px solid #738DD7;
 }
 .form-controls label {
   font-size: 0.75rem;
@@ -124,4 +138,16 @@ form p:last-child a {
 }
 form p:last-child a:visited {
   color: #596D48;
+}
+.form-section input[type="password"]:user-invalid {
+  border-color: red;
+}
+input[type="password"]:user-invalid + span::after {
+  content: "* Passwords do not match";
+  color: red;
+  font-size: 0.75rem;
+}
+input[type="password"] + span {
+  display: inline-block;
+  height: 1rem;
 }
